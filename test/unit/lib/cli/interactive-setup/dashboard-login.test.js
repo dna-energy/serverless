@@ -21,7 +21,7 @@ const ServerlessSDKMock = class ServerlessSDK {
       get: async () => {
         return {
           awsAccountId: '377024778620',
-          supportedRuntimes: ['nodejs10.x', 'nodejs12.x', 'python2.7', 'python3.6', 'python3.7'],
+          supportedRuntimes: ['nodejs10.x', 'nodejs14.x', 'python2.7', 'python3.6', 'python3.7'],
           supportedRegions: [
             'us-east-1',
             'us-east-2',
@@ -116,7 +116,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-login.test.js', function
     });
     const context = {
       serviceDir: process.cwd(),
-      configuration: { provider: { name: 'aws', runtime: 'nodejs12.x' } },
+      configuration: { provider: { name: 'aws', runtime: 'nodejs14.x' } },
       configurationFilename: 'serverless.yml',
       options: {},
       initial: {},
@@ -148,7 +148,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-login.test.js', function
     });
     const context = {
       serviceDir: process.cwd(),
-      configuration: { provider: { name: 'aws', runtime: 'nodejs12.x' } },
+      configuration: { provider: { name: 'aws', runtime: 'nodejs14.x' } },
       configurationFilename: 'serverless.yml',
       options: { org: 'someorg' },
       initial: {},
@@ -168,7 +168,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-login.test.js', function
     });
     const context = {
       serviceDir: process.cwd(),
-      configuration: { org: 'someorg', provider: { name: 'aws', runtime: 'nodejs12.x' } },
+      configuration: { org: 'someorg', provider: { name: 'aws', runtime: 'nodejs14.x' } },
       configurationFilename: 'serverless.yml',
       options: {},
       initial: {},
@@ -191,7 +191,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-login.test.js', function
     });
     const context = {
       serviceDir: process.cwd(),
-      configuration: { provider: { name: 'aws', runtime: 'nodejs12.x' } },
+      configuration: { provider: { name: 'aws', runtime: 'nodejs14.x' } },
       configurationFilename: 'serverless.yml',
       options: {},
       initial: {},

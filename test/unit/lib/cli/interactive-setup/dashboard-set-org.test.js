@@ -39,7 +39,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-set-org.test.js', functi
               awsAccountId: '377024778620',
               supportedRuntimes: [
                 'nodejs10.x',
-                'nodejs12.x',
+                'nodejs14.x',
                 'python2.7',
                 'python3.6',
                 'python3.7',
@@ -154,7 +154,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-set-org.test.js', functi
       serviceDir: process.cwd(),
       configuration: {
         service: 'some-aws-service',
-        provider: { name: 'aws', runtime: 'nodejs12.x' },
+        provider: { name: 'aws', runtime: 'nodejs14.x' },
       },
       configurationFilename: 'serverless.yml',
       options: {},
@@ -174,7 +174,7 @@ describe('test/unit/lib/cli/interactive-setup/dashboard-set-org.test.js', functi
               get: async () => {
                 return {
                   awsAccountId: '377024778620',
-                  supportedRuntimes: ['nodejs10.x', 'nodejs12.x'],
+                  supportedRuntimes: ['nodejs10.x', 'nodejs14.x'],
                   supportedRegions: ['us-east-1'],
                 };
               },

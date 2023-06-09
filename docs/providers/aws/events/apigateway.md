@@ -1464,7 +1464,7 @@ service: my-api
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   stage: dev
   region: eu-west-2
 
@@ -1652,7 +1652,7 @@ Resource policies are policy documents that are used to control the invocation o
 ```yml
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
 
   resourcePolicy:
     - Effect: Allow

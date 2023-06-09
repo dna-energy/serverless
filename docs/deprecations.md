@@ -94,7 +94,7 @@ Starting with `v3.0.0`, `--function` or `-f` option for `deploy` command will be
 
 Deprecation code: `CHANGE_OF_DEFAULT_RUNTIME_TO_NODEJS14X`
 
-Starting with `v3.0.0`, the default runtime will change from `nodejs12.x` to `nodejs14.x`. In order to hide the deprecation message and ensure seamless upgrade, please set the runtime explicitly.
+Starting with `v3.0.0`, the default runtime will change from `nodejs14.x` to `nodejs14.x`. In order to hide the deprecation message and ensure seamless upgrade, please set the runtime explicitly.
 
 <a name="AWS_API_GATEWAY_NON_APPLICABLE_SETTINGS"><div>&nbsp;</div></a>
 
